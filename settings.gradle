@@ -1,0 +1,3 @@
+rootProject.name='AutoViewPager'
+include ':app'
+include ':autoviewpager'
