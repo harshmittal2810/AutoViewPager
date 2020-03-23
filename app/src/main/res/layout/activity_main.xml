@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.harsh.autoviewpager.AutoViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:autoScroll="true"
+        app:isInfinite="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:scrollInterval="3000"
+        app:wrap_content="true" />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/indicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:piv_animationDuration="200"
+        app:piv_animationType="slide"
+        app:piv_interactiveAnimation="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
