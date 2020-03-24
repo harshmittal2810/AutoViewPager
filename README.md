@@ -5,7 +5,7 @@ AutoViewPager is auto scrolling viewpager with infinite steps.
 
 **Step 1.** Add the maven url in your root project gradle file :
 
-```css
+```java
 allprojects {
 		repositories {
 			...
@@ -17,7 +17,7 @@ allprojects {
 
 **Step 2.** Add the dependency
 
-```css
+```java
 	dependencies {
 	        implementation 'com.github.harshmittal2810:AutoViewPager:<version-name>'
 	}
